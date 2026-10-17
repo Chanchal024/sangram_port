@@ -193,16 +193,19 @@ export default function Hero({ onOpenContact }) {
               className="relative w-full max-w-sm sm:max-w-md rounded-[2rem] p-2 bg-gradient-to-b from-purple-500/30 via-purple-800/10 to-transparent border border-purple-400/30 shadow-[0_20px_60px_-15px_rgba(147,51,234,0.35)] backdrop-blur-md overflow-visible group"
             >
               {/* Inner Image Container */}
-              <div className="relative rounded-[1.6rem] overflow-hidden bg-[#0e0a1e] aspect-[3/4] flex items-center justify-center">
+              <div className="relative rounded-[1.6rem] overflow-hidden bg-gradient-to-b from-[#2a1052] via-[#140a2a] to-[#080512] aspect-[3/4] flex items-center justify-center">
+                {/* Purple radial backlight halo */}
+                <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-purple-600/35 filter blur-3xl pointer-events-none" />
+
                 <img
-                  src="/images/hero-nikhil.jpg"
+                  src="/images/hero-nikhil.png"
                   alt="Nikhil Barik — Graphic & Motion Designer"
-                  className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 relative z-10"
                   loading="eager"
                 />
 
                 {/* Subtle gradient overlay at bottom of photo */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#08070d]/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#08070d]/70 via-transparent to-transparent pointer-events-none z-10" />
               </div>
 
               {/* Top-Left Floating Badge: 4+ Years Experience */}

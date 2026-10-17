@@ -14,13 +14,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
           {/* Logo */}
           <div className="flex flex-col items-center md:items-start select-none">
-            <span className="font-extrabold text-2xl tracking-tight text-white flex items-center gap-1">
-              Nikhil
-              <span className="inline-block w-1.5 h-1.5 rounded-full bg-purple-500"></span>
-            </span>
-            <span className="text-[10px] tracking-[0.32em] uppercase text-zinc-400 font-semibold -mt-1">
-              GRAPHIX
-            </span>
+            <img
+              src="/images/logo.png"
+              alt="Nikhil Graphix"
+              className="h-8 w-auto object-contain opacity-90"
+            />
           </div>
 
           {/* Quick Links */}

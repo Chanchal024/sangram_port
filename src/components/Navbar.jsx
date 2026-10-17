@@ -39,14 +39,12 @@ export default function Navbar({ onOpenContact }) {
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
         {/* Brand Logo */}
-        <a href="#hero" className="group flex flex-col items-start select-none">
-          <span className="font-extrabold text-2xl tracking-tight text-white group-hover:text-purple-300 transition-colors flex items-center gap-1">
-            Nikhil
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-purple-500 animate-pulse"></span>
-          </span>
-          <span className="text-[10px] tracking-[0.32em] uppercase text-zinc-400 font-semibold -mt-1 group-hover:text-purple-400 transition-colors">
-            GRAPHIX
-          </span>
+        <a href="#hero" className="group flex items-center select-none py-1">
+          <img
+            src="/images/logo.png"
+            alt="Nikhil Graphix"
+            className="h-8 sm:h-9 w-auto object-contain group-hover:opacity-90 group-hover:brightness-110 transition-all duration-300 drop-shadow-[0_0_12px_rgba(168,85,247,0.3)]"
+          />
         </a>
 
         {/* Desktop Nav Links */}
